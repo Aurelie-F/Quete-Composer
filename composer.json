@@ -1,0 +1,14 @@
+{
+    "name": "aurelie/phpstorm-projects",
+    "description": "Projet quete composer",
+    "authors": [
+        {
+            "name": "Aurelie-F",
+            "email": "aurelie.frarin@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
