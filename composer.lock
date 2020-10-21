@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c29962c40ae555a17a31ad759c87e045",
     "packages": [
         {
             "name": "ehime/hello-world",
             "version": "1.0.5",
-            "version_normalized": "1.0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ehime/hello-world.git",
@@ -22,9 +27,7 @@
                 "mockery/mockery": "0.8.*",
                 "phpunit/phpunit": "4.3.5"
             },
-            "time": "2015-07-31T17:53:36+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "HelloWorld": "src/"
@@ -50,8 +53,16 @@
                 "issues": "https://github.com/ehime/hello-world/issues",
                 "source": "https://github.com/ehime/hello-world/tree/1.0.5"
             },
-            "install-path": "../ehime/hello-world"
+            "time": "2015-07-31T17:53:36+00:00"
         }
     ],
-    "dev": true
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

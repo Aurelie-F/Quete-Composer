@@ -20,11 +20,27 @@ class ComposerStaticInitea631645ab7558eb91a32e3cd40ebae4
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HelloWorld' => 
+            array (
+                0 => __DIR__ . '/..' . '/ehime/hello-world/src',
+            ),
+        ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitea631645ab7558eb91a32e3cd40ebae4::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitea631645ab7558eb91a32e3cd40ebae4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitea631645ab7558eb91a32e3cd40ebae4::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitea631645ab7558eb91a32e3cd40ebae4::$classMap;
 
         }, null, ClassLoader::class);
     }
